@@ -5,8 +5,17 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Button Content="Create Database"
-                Click="CreateDatabaseClicked" />
+                Click="CreateDatabaseClicked" 
+                Grid.Row="0"/>
+        <Button Content="Create Session Factory"
+                Click="CreateSessionFactoryClicked" 
+                Grid.Row="1" />
+        <Button Content="Open Session"
+                Click="OpenSessionClicked" 
+                Grid.Row="2" />
     </Grid>
 </Window>
