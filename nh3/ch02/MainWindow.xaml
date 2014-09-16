@@ -39,6 +39,11 @@
             <Button Grid.Row="2" Grid.Column="0"
                     Content ="Add Category"
                     Click="AddCategoryClicked" />
+            <Button Grid.Row="3" Grid.Column="0"
+                    Content="Load Categories"
+                    Click="LoadCategoriesClicked" />
+            <ListBox x:Name="CategoryList"
+                     Grid.Row="3" Grid.Column="1" />
         </Grid>
     </Grid>
 </Window>
