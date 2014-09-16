@@ -69,5 +69,19 @@ namespace ch02
                 Debug.Assert(session != null);
             }
         }
+
+        private void AddCategoryClicked(object sender, RoutedEventArgs e)
+        {
+            var factory = CreateSessionFactory();
+            using (var session = factory.OpenSession())
+            {
+                var category = new Category
+                {
+                    Name = CategoryName.Text,
+                    Description = CategoryDescription.Text
+                };
+                session.Save(category);
+            }
+        }
     }
 }
